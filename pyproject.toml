@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pyspark-examples"
+version = "0.1.0"
+description = ""
+authors = ["Maximilian Zwiesler <maximilian.zwiesler@mercedes-benz.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.10"
+pyspark = {version = "~3.5.1", extras = ["sql"]}
+numpy = "^1"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
